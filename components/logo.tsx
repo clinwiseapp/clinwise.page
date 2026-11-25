@@ -12,7 +12,7 @@ export function LogoMark({ className, framed = true }: { className?: string; fra
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <span className={cn("flex items-center gap-2.5", className)}>
+    <span className={cn("flex gap-2 justify-center", className)}>
       <LogoMark />
       <span className="font-display text-[21px] font-extrabold tracking-[-0.03em]">ClinWise</span>
     </span>
