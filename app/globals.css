@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 8% 97%;     /* #F7F8F7 */
+    --foreground: 206 27% 9%;     /* #10171C */
+    --card: 0 0% 100%;            /* #FFFFFF */
+    --muted: 140 9% 94%;          /* #EDF0EE */
+    --muted-foreground: 198 12% 31%; /* #46545A */
+    --subtle: 198 7% 45%;         /* #6B777C */
+    --border: 150 8% 90%;         /* #E4E8E6 */
+    --primary: 206 27% 9%;        /* #10171C */
+    --primary-foreground: 120 8% 97%;
+    --signal: 180 100% 25%;       /* #007C7D — accent text */
+    --radius: 1.5rem;
+  }
+
+  .dark {
+    --background: 204 26% 7%;     /* #0E1418 */
+    --foreground: 140 9% 94%;     /* #EEF1EF */
+    --card: 203 25% 12%;          /* #172026 */
+    --muted: 203 24% 15%;         /* #1C272E */
+    --muted-foreground: 196 9% 69%; /* #A9B4B8 */
+    --subtle: 199 7% 54%;         /* #7F8C92 */
+    --border: 204 21% 19%;        /* #26323A */
+    --primary: 181 53% 54%;       /* #4CC6C8 */
+    --primary-foreground: 204 26% 7%;
+    --signal: 181 53% 54%;
+  }
+
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { @apply bg-background font-sans text-foreground antialiased transition-colors; }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+}
